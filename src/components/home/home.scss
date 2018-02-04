@@ -1,0 +1,108 @@
+@import '../../utilities/variables.scss';
+
+
+.home {
+    background-color: $main;
+    background-color: $dark;
+    color: $accent;
+    font-family: 'Oswald';
+    .landing {
+        position: relative;
+        height: 500px;
+        .right {
+            top: 0;
+            right: 0;
+            // border: 1px solid white;
+        }
+        .left{
+            left: 0;
+            top: 0;
+        }
+        .img {
+            z-index: 0;
+            height: 100%;
+            position: absolute;
+            background-size: cover;
+        }
+        .weld {
+            background-image: url('../../media/weld.jpg');
+            width: 70%;
+        }
+        .saw {
+            background-image: url('../../media/saw.jpg');
+            width: 70%;
+        }
+        .blurb {
+            // border: 1px solid white;
+            height: 300px;
+            position: absolute;
+            width: 40%;
+            top: 50%;
+            right: 0;
+            margin-top: -150px;
+            padding: 40px;
+            color:$white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            h2{
+                font-size: 3.4em;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 1.5em;
+            }
+        }
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            .angled {
+                position: absolute;
+                right: -30%;
+                top: 0;
+                width: 70%;
+                height: 100%;
+                background: $darker;
+                transform: skewX(-20deg)
+            }
+            .gradient {
+                position: absolute;
+                right: 25%;
+                top: 0;
+                width: 45%;
+                height: 100%;
+                background: linear-gradient(90deg, $accent, rgba(0,0,0,0))
+            }
+            .block {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 30%;
+                background: $accent;
+                // border: 1px solid white; 
+            }
+        }
+    }
+    .article {
+        // margin: 0 270px;
+        background-color: $dark;
+        padding: 35px;
+        font-size: 20px;
+        color: $white;
+        text-align: left;
+        word-break: break-all;
+        min-height: 40vh;
+    }
+    footer{
+        background: $darkest;
+        font-size: .8em;
+        padding: 50px;
+        color: white;
+    }
+}

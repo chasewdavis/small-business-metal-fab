@@ -1,0 +1,81 @@
+@import '../../utilities/variables.scss';
+
+.shaddow{
+    box-shadow: 0 0 60px black;
+}
+
+.nav {
+    z-index: 10;
+    background: $gradient_accent;
+    font-family: 'Oswald';
+    position: fixed;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10, 10FR);
+    transition: all .5s;
+    &:hover{
+        box-shadow: none;
+    }
+    button, h1, .gap{
+        font-family: inherit;
+        padding: 18px;
+        border:none;
+        font-weight: 600;
+        color: $main;
+    }
+
+    button {
+        background: rgba(0,0,0,0);
+        transition: all .25s;
+        font-size: 1.6em;
+        position: relative;
+        cursor: pointer;
+        color: $main;
+        outline: none;
+        &:hover{
+            color: $white;
+            // background: $main;
+            div:nth-child(1) {
+                width: 50%
+            }
+            div:nth-child(2) {
+                width: 50%;
+                margin-left: -50%;
+            }
+        }
+        div {
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            background: $white;
+            height: 5px;
+            width: 0%;
+            transition: all .3s; 
+        }
+        
+    }
+
+    h1{
+        grid-column: 1/5;
+        font-size: 2.2em;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .gap{
+        grid-column: 5/7;
+    }
+    button:nth-child(3){
+        grid-column: 7/8;
+    }
+    button:nth-child(4){
+        grid-column: 8/9;
+    }
+    button:nth-child(5){
+        grid-column: 9/10;
+    }
+    button:nth-child(6){
+        grid-column: 10/11;
+    }
+}

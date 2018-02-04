@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+.home {
+  background-color: #242a2c;
+  background-color: #1d2224;
+  color: #ff5e00;
+  font-family: 'Oswald'; }
+  .home .landing {
+    position: relative;
+    height: 500px; }
+    .home .landing .right {
+      top: 0;
+      right: 0; }
+    .home .landing .left {
+      left: 0;
+      top: 0; }
+    .home .landing .img {
+      z-index: 0;
+      height: 100%;
+      position: absolute;
+      background-size: cover; }
+    .home .landing .weld {
+      background-image: url("../../media/weld.jpg");
+      width: 70%; }
+    .home .landing .saw {
+      background-image: url("../../media/saw.jpg");
+      width: 70%; }
+    .home .landing .blurb {
+      height: 300px;
+      position: absolute;
+      width: 40%;
+      top: 50%;
+      right: 0;
+      margin-top: -150px;
+      padding: 40px;
+      color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around; }
+      .home .landing .blurb h2 {
+        font-size: 3.4em;
+        margin-bottom: 20px; }
+      .home .landing .blurb h3 {
+        font-size: 1.5em; }
+    .home .landing .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      overflow: hidden; }
+      .home .landing .overlay .angled {
+        position: absolute;
+        right: -30%;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        background: #171a1b;
+        transform: skewX(-20deg); }
+      .home .landing .overlay .gradient {
+        position: absolute;
+        right: 25%;
+        top: 0;
+        width: 45%;
+        height: 100%;
+        background: linear-gradient(90deg, #ff5e00, transparent); }
+      .home .landing .overlay .block {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 30%;
+        background: #ff5e00; }
+  .home .article {
+    background-color: #1d2224;
+    padding: 35px;
+    font-size: 20px;
+    color: #f0f0f0;
+    text-align: left;
+    word-break: break-all;
+    min-height: 40vh; }
+  .home footer {
+    background: #101213;
+    font-size: .8em;
+    padding: 50px;
+    color: white; }
