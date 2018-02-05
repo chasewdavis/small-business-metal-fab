@@ -1,13 +1,13 @@
 @import '../../utilities/variables.scss';
 
 .shaddow{
-    box-shadow: 0 0 60px black;
+    box-shadow: 0 0 40px $darkest;
 }
 
 .nav {
     z-index: 10;
     background: $gradient_accent;
-    font-family: 'Oswald';
+    font-family: 'Oswald', 'Helvetica';
     position: fixed;
     width: 100vw;
     display: grid;

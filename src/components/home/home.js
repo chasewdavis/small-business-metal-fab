@@ -35,6 +35,11 @@ export default class Home extends Component {
 from small repairs to large complex structural steel jobs. </h3>
                     </div>
                 </div>
+
+                <div className='landing'>
+                
+                </div>
+
                 <div className='landing'>
                     <div className='img saw right'></div>
                     <div className='overlay'>
@@ -48,9 +53,6 @@ from small repairs to large complex structural steel jobs. </h3>
                     </div>
                 </div>
     
-                <div className='article'>
-                
-                </div>
                 <footer>
                     Designed and Crafted by Chase Davis © 2018
                 </footer>

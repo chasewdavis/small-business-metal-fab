@@ -5,8 +5,9 @@
     background-color: $main;
     background-color: $dark;
     color: $accent;
-    font-family: 'Oswald';
+    font-family: 'Oswald', 'Helvetica';
     .landing {
+        background: $darker;
         position: relative;
         height: 500px;
         .right {
@@ -67,7 +68,8 @@
                 top: 0;
                 width: 70%;
                 height: 100%;
-                background: $darker;
+                // background: $darker;
+                background: $gradient_dark;
                 transform: skewX(-20deg)
             }
             .gradient {
@@ -76,7 +78,7 @@
                 top: 0;
                 width: 45%;
                 height: 100%;
-                background: linear-gradient(90deg, $accent, rgba(0,0,0,0))
+                background: linear-gradient(90deg, $dark, rgba(0,0,0,0))
             }
             .block {
                 position: absolute;
@@ -84,7 +86,7 @@
                 top: 0;
                 height: 100%;
                 width: 30%;
-                background: $accent;
+                background: $dark;
                 // border: 1px solid white; 
             }
         }

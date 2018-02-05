@@ -2,9 +2,10 @@
 .home {
   background-color: #242a2c;
   background-color: #1d2224;
-  color: #ff5e00;
-  font-family: 'Oswald'; }
+  color: #ff5100;
+  font-family: 'Oswald', 'Helvetica'; }
   .home .landing {
+    background: #171a1b;
     position: relative;
     height: 500px; }
     .home .landing .right {
@@ -55,7 +56,7 @@
         top: 0;
         width: 70%;
         height: 100%;
-        background: #171a1b;
+        background: linear-gradient(10deg, #101213, #1d2224);
         transform: skewX(-20deg); }
       .home .landing .overlay .gradient {
         position: absolute;
@@ -63,14 +64,14 @@
         top: 0;
         width: 45%;
         height: 100%;
-        background: linear-gradient(90deg, #ff5e00, transparent); }
+        background: linear-gradient(90deg, #1d2224, transparent); }
       .home .landing .overlay .block {
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
         width: 30%;
-        background: #ff5e00; }
+        background: #1d2224; }
   .home .article {
     background-color: #1d2224;
     padding: 35px;

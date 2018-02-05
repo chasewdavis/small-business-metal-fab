@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 .shaddow {
-  box-shadow: 0 0 60px black; }
+  box-shadow: 0 0 40px #101213; }
 
 .nav {
   z-index: 10;
-  background: linear-gradient(45deg, #ff5e00, #ff7b00);
-  font-family: 'Oswald';
+  background: linear-gradient(90deg, #ff5100, #ff6600);
+  font-family: 'Oswald', 'Helvetica';
   position: fixed;
   width: 100vw;
   display: grid;
