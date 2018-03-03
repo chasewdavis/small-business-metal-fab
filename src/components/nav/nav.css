@@ -17,16 +17,18 @@
     font-family: inherit;
     padding: 18px;
     border: none;
-    font-weight: 600;
     color: #242a2c; }
   .nav button {
     background: transparent;
+    width: 100%;
     transition: all .25s;
     font-size: 1.6em;
     position: relative;
     cursor: pointer;
     color: #242a2c;
-    outline: none; }
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 1.5px; }
     .nav button:hover {
       color: #f0f0f0; }
       .nav button:hover div:nth-child(1) {
@@ -42,20 +44,27 @@
       height: 5px;
       width: 0%;
       transition: all .3s; }
+  .nav .nav_highlight {
+    color: #f0f0f0; }
+    .nav .nav_highlight div:nth-child(1) {
+      width: 50%; }
+    .nav .nav_highlight div:nth-child(2) {
+      width: 50%;
+      margin-left: -50%; }
   .nav h1 {
     grid-column: 1/5;
     font-size: 2.2em;
     text-align: left;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    font-weight: 900; }
+  .nav img {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 5px 10px; }
   .nav .gap {
     grid-column: 5/7; }
-  .nav button:nth-child(3) {
-    grid-column: 7/8; }
-  .nav button:nth-child(4) {
-    grid-column: 8/9; }
-  .nav button:nth-child(5) {
-    grid-column: 9/10; }
-  .nav button:nth-child(6) {
-    grid-column: 10/11; }

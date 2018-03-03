@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Nav from '../nav/nav.js';
-import './about.css';
+import './projects.css';
 
-export default class About extends Component {
+export default class Projects extends Component {
     constructor(props){
         super(props)
 
@@ -20,10 +20,10 @@ export default class About extends Component {
 
     render(){
         return (
-            <div className='about'>
-                <Nav location='about'/>
+            <div className='projects'>
+                <Nav location='projects'/>
                 <div className='spaceForNav'/>
-                about page
+                projects page
             </div>
         )
     }
