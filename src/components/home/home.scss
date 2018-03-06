@@ -10,10 +10,44 @@
         background: $darker;
         position: relative;
         height: 500px;
+        .right_slider {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 70%;
+        }
+        .slider_btns{
+            position: absolute;
+            bottom:0;
+            right: 0;
+            width: 70%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            button {
+                margin: 5px;
+                height: 20px;
+                width: 20px;
+                outline: none;
+                cursor: pointer;
+                border: 4px solid $white;
+                border-radius: 2px;
+                padding:0;
+            }
+            .open {
+                background: rgba(0,0,0,0)
+            }
+            .fill {
+                background: $white;
+            }
+        }
         .right {
             top: 0;
             right: 0;
-            // border: 1px solid white;
         }
         .left{
             left: 0;
@@ -33,14 +67,20 @@
             background-image: url('../../media/saw.jpg');
             width: 70%;
         }
+        .blurb_mid{
+            height: 300px;
+            margin-top: -150px;
+        }
+        .blurb_tall{
+            height: 400px;
+            margin-top: -200px;
+        }
         .blurb {
             // border: 1px solid white;
-            height: 300px;
             position: absolute;
             width: 40%;
             top: 50%;
             right: 0;
-            margin-top: -150px;
             padding: 40px;
             color:$white;
             display: flex;
@@ -49,10 +89,27 @@
             justify-content: space-around;
             h2{
                 font-size: 3.4em;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
             }
             h3{
                 font-size: 1.5em;
+            }
+            button{
+                position: relative;
+                padding:12px 22px;
+                font-size: 1.9em;
+                border:none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .accent{
+                background: $accent;
+                color: $white;
+                transition: all .2s;
+                &:hover{
+                    background: $accent_dark;
+                    // color:$white;
+                }
             }
         }
         .overlay {
@@ -80,6 +137,14 @@
                 height: 100%;
                 background: linear-gradient(90deg, $dark, rgba(0,0,0,0))
             }
+            .gradient_dark {
+                position: absolute;
+                right: 25%;
+                top: 0;
+                width: 45%;
+                height: 100%;
+                background: linear-gradient(90deg, $darkest, rgba(0,0,0,0));
+            }
             .block {
                 position: absolute;
                 left: 0;
@@ -88,6 +153,33 @@
                 width: 30%;
                 background: $dark;
                 // border: 1px solid white; 
+            }
+            .block_dark {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 30%;
+                background: $darkest;
+            }
+        }
+        .overlay_transition{
+            background: rgba(0,0,0,0);
+            animation-name: cover_uncover;
+            animation-duration: 1s;
+        }
+        @keyframes cover_uncover {
+            0%{
+                background: rgba(0,0,0,0)
+            }
+            45%{
+                background: $darkest;
+            }
+            55%{
+                background: $darkest;
+            }
+            100%{
+                background: rgba(0,0,0,0);
             }
         }
     }
