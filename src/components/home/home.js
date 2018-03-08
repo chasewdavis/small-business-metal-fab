@@ -47,7 +47,7 @@ export default class Home extends Component {
 
         setTimeout( () => {
             this.setState({slider_index:index})
-        }, 500)
+        }, 330)
 
         setTimeout( () => {
             this.setState({in_transition:false})
@@ -108,7 +108,21 @@ from small repairs to large complex structural steel jobs.</h3>
                 
 
                 <div className='landing'>
-                    
+                    <div className='img team left'></div>
+                    <div className='overlay'>
+                        <div className='vignette'></div>
+                        <div className='divide'></div>
+                    </div>
+                    <div className='blurb blurb_tall right blurb_center'>
+                        <h2>Proud History Serving the Pacific Northwest</h2>
+                        <h3>The Wiesner family has been farming, and actively involved in the agriculture community, 
+                        in Oregon for over 100 years.</h3>
+                        <Link to='/about'>
+                            <button className='accent'>
+                                Our Story
+                            </button>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className='landing'>
@@ -118,14 +132,37 @@ from small repairs to large complex structural steel jobs.</h3>
                         <div className='block'></div>
                     </div>
                     <div className='blurb blurb_mid left'>
-                    <h2>Family Owned and Operated Since 1988</h2>
-                    <h3>Wiesner Metal Fab LLC can handle a full range of fabrication needs
-from small repairs to large complex structural steel jobs. </h3>
+                    <h2>Contact us today!</h2>
+                    <h3>Email: info@wiesnermetalb.com</h3>
+                    <h3>Phone: 503 510 2530</h3>
+                    {/* <h3>We look forward to serving you in the future!</h3> */}
+                        <Link to='/contact'>
+                            <button className='accent'>
+                                Contact Us
+                            </button>
+                        </Link>
                     </div>
                 </div>
-    
                 <footer>
-                    Designed and Crafted by Chase Davis © 2018
+                    {/* <div className='all_links'>
+                    <Link to='/projects'>
+                        <button className='accent'>
+                            Projects
+                        </button>
+                    </Link>
+                    <Link to='/about'>
+                        <button className='accent'>
+                            About
+                        </button>
+                    </Link>
+                    <Link to='/contact'>
+                        <button className='accent'>
+                            Contact
+                        </button>
+                    </Link>
+                    </div> */}
+                    <p>Website Designed by Chase Davis © 2018</p>
+                    <a target="_blank" rel="noopener noreferrer" href="http://chasedavis.io">chasedavis.io</a>
                 </footer>
             </div>
         )

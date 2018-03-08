@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 $white: rgb(240, 240, 240);
+$light: rgb(154, 165, 168);
 $main: rgb(36, 42, 44);
 $dark: rgb(29, 34, 36);
 $darker: rgb(23, 26, 27);
@@ -13,4 +14,5 @@ $accent_light: rgb(255, 102, 0);
 $accent_dark: rgb(197, 62, 0);
 
 $gradient_accent: linear-gradient(90deg, $accent, $accent_light);
-$gradient_dark: linear-gradient(10deg, $darkest, $dark); 
+$gradient_dark: linear-gradient(10deg, $darkest, $dark);
+$gradient_light: linear-gradient(90deg, $main, $darker);
